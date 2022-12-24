@@ -2,3 +2,7 @@ main{
   flex-grow: 1;
   background-color: var(--primaryBgColor);
 }
+
+.target{
+  width: 200px;
+}

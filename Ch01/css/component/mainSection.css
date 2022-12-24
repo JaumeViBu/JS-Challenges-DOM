@@ -1,0 +1,14 @@
+main{
+  flex-grow: 1;
+  background-color: var(--primaryBgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.target{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(109, 63, 132);
+}

@@ -1,0 +1,21 @@
+main{
+  flex-grow: 1;
+  background-color: var(--primaryBgColor);
+  font-size: 1.4rem;
+  color: var(--primaryTextColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+}
+
+li{
+  color: inherit;
+}
+a{
+  text-decoration: none;
+  color: var(--primaryTextColor);
+}
+
+

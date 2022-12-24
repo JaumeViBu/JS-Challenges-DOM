@@ -1,0 +1,15 @@
+nav{
+  display: flex;
+  justify-content: flex-start;
+  gap: 6rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondaryBgColor);
+  font-family: var(--font);
+}
+
+nav,nav>h1, nav>a{
+  color: var(--secondaryTextColor);
+}
+
+
+
