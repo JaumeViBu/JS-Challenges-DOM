@@ -1,0 +1,9 @@
+:root{
+  --primaryTextColor: #2a2a2a;
+  --secondaryTextColor: #d5d5d5;
+  --primaryBgColor:#348091;
+  --secondaryBgColor: #2b6f65;
+  --attentionBgColor: #918634;
+  --primaryDarkBgColor: #823491;
+  --font:'Dejavu sans',Helvetica, sans-serif;
+}
