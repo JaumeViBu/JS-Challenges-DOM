@@ -9,7 +9,7 @@ Try to not only manipulate the DOM, but also keep code structures and functions 
 Use a decent static template in order to practice CSS and keep in mind screen sizes.
 
 -[x] Ch01 - Having two squares in the document, we want that after clicking one, the other begins to slowly transforming into a circle and changes color.  
--[ ] Ch02 - Create a responsive menu in which, in the mobile version, the link list appears from the right side of the page after clicking in a hamburger menu.  
+-[x] Ch02 - Create a responsive menu in which, in the mobile version, the link list appears from the right side of the page after clicking in a hamburger menu.  
 -[ ] Ch03 - Create a shopping cart page with some products. (use an array of 'product' objects structure)  
     -[ ] Every product must have a counter to add or take away more quantity.  
     -[ ] Every product must have a price.  
