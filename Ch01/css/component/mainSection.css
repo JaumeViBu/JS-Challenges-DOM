@@ -23,3 +23,15 @@ main{
   border-radius: 50%;
   background-color: #4bb75d;
 }
+
+@media (min-width: 700px) {
+  
+  main{
+    flex-direction: row;
+  }
+
+  .target{
+    width: 40vh;
+    height: 40vh;
+  }
+}
