@@ -10,5 +10,16 @@ main{
 .target{
   width: 200px;
   height: 200px;
+  border: 2px solid #6e1717;
+  transition: all 1.5s ease-out;
+}
+
+.square{
+  border-radius: 0%;
   background-color: #6d3f84;
+}
+
+.circle{
+  border-radius: 50%;
+  background-color: #4bb75d;
 }

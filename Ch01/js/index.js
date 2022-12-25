@@ -1,56 +1,42 @@
 const targetStates = {
   targetAState: {
     id: 'targetA',
-    actualShape: 'sq',
-    radius: 0,
-    bgColor: '#6d3f84',
+    actualShape: 'square',
     isChanging: false,
-    interval: undefined,
   },
   targetBState: {
     id: 'targetB',
-    actualShape: 'sq',
-    radius: 0,
-    bgColor: '#6d3f84',
+    actualShape: 'square',
     isChanging: false,
-    interval: undefined,
   },
 };
 
-
-function updateTransforming(state) {
-
-  if (state.actualShape == 'sq' && state.radius >= 50) {
-    state.isChanging = false;
-    state.radius = 50;
-    state.actualShape = 'cr'
-    clearInterval(state.interval);
-    console.log('Done transforming ' + state.id);
-    return;
-  }
-  if (state.actualShape == 'cr' && state.radius <= 0) {
-    state.isChanging = false;
-    state.radius = 0;
-    state.actualShape = 'sq'
-    clearInterval(state.interval);
-    console.log('Done transforming ' + state.id);
-    return;
-  }
-
-  state.radius += state.actualShape == 'sq' ? 2 : -2;
-
-  document.querySelector('#' + state.id).style.borderRadius = state.radius + '%';
-}
-
+/**
+ * If is not already changing, change the class of the other 
+ * target starting off the css transition
+ *
+ * @param {event} event
+ * @returns undefined
+ */
 function transformTarget(event) {
 
   const targetState = event.explicitOriginalTarget.id == 'targetA' ? targetStates.targetBState : targetStates.targetAState;
 
   if (targetState.isChanging) return;
+
   targetState.isChanging = true;
-  targetState.interval = setInterval(updateTransforming, 100, targetState);
+  const element = document.querySelector('#' + targetState.id);
+  const newShape = targetState.actualShape == 'square' ? 'circle' : 'square';
+  console.log(`new Shape: ${newShape}`);
+  element.classList.add(newShape);
+  element.classList.remove(targetState.actualShape);
+  targetState.actualShape = newShape;
 }
 
 //hook event handlers for onClick to both targets
 document.querySelector('#targetA').addEventListener('click', transformTarget);
 document.querySelector('#targetB').addEventListener('click', transformTarget);
+
+//on transition end, reflect that is not changing anymore in the state object
+document.querySelector('#targetA').addEventListener('transitionend', () => targetStates.targetAState.isChanging = false);
+document.querySelector('#targetB').addEventListener('transitionend', () => targetStates.targetBState.isChanging = false);
