@@ -20,10 +20,8 @@ const targetStates = {
  */
 function transformTarget(event) {
 
-  const targetState = event.explicitOriginalTarget.id == 'targetA' ? targetStates.targetBState : targetStates.targetAState;
-
+  const targetState = this.id == 'targetA' ? targetStates.targetBState : targetStates.targetAState;
   if (targetState.isChanging) return;
-
   targetState.isChanging = true;
   const element = document.querySelector('#' + targetState.id);
   const newShape = targetState.actualShape == 'square' ? 'circle' : 'square';
