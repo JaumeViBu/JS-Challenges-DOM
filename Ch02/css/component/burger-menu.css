@@ -21,10 +21,6 @@ a{
 
 .burger--open{
   background-image: url('../../img/menu--open.png');
-<<<<<<< HEAD
-=======
-  
->>>>>>> dev
 }
 
 .burger__links{
@@ -38,15 +34,26 @@ a{
   background-color: var(--secondaryBgColor);
   color: var(--secondaryTextColor);
   border-radius: 0 0 0 10px;
-  display: none;
-  animation: burger 0.5s ease-in 0s 1 normal;
+  animation: burger--close 0.5s ease-in 0s 1 normal;
 }
 
 .burger__links li{
   color: var(--secondaryTextColor);
 }
 
-@keyframes burger {
+@keyframes burger--close {
+  from{
+    display: flex;
+    right: 0;
+  }
+  to{
+    
+    right: -60px;
+    display: none;
+  }
+}
+
+@keyframes burger--open {
   from{
     display: none;
     right: -60px;
@@ -58,13 +65,12 @@ a{
   
 }
 
+
 .burger__links--open{
-  display: block;
+  display: flex;
   right: 0;
-<<<<<<< HEAD
-=======
-  
->>>>>>> dev
+  gap: 0.5rem;
+  animation: burger--open 0.5s ease-in 0s 1 normal;
 }
 
 nav>ul>li{
