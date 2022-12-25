@@ -9,9 +9,21 @@ main{
   justify-content: center;
   font-family: var(--font);
 }
-
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 li{
   color: inherit;
+  background-color: var(--attentionBgColor);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border-bottom: 1px solid #000;
+}
+li:active{
+  border-bottom: none;
+  border-top: 1px solid #fff;
 }
 a{
   text-decoration: none;
