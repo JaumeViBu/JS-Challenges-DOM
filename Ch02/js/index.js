@@ -9,6 +9,7 @@ function toogleBurgerMenu(event) {
 
     this.classList.remove('burger--open');
     document.querySelector('.burger__links').classList.remove('burger__links--open');
+
   }
   else {
 
