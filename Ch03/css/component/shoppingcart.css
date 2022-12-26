@@ -1,9 +1,63 @@
 
-table{
-  display: grid;
-  grid-template-areas: 'thumbnail name quantity price';
+tr th,tr td{
+  padding: 0.5rem 1rem;
+  font-family: var(--font);
 }
 
-.thead_thumbnail{
-grid-area: 'thumbnail';
+th{
+  
+  border-bottom: 1px solid black;
+}
+
+.th__thumbnail{
+  width: 20%;
+}
+
+.data__thumbnail{
+  width: 100%;
+  max-width: 100px;
+}
+
+tr>td{
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.data__name{
+  
+}
+.cell__quantity{
+display: flex;
+align-items: center;
+}
+.data__quantity{
+  width: 50%;
+}
+.data_quantity_buttons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.data__quantity-btn{
+  
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.data__quantity-btn--add{
+  background-color: #349b34;
+  
+}
+.data__quantity-btn--add{
+  background-color: #bf4545;
+}
+
+.data__price{
+
 }

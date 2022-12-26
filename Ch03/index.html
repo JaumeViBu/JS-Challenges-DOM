@@ -19,24 +19,42 @@
     <table>
       <thead>
         <tr>
-          <th class="thead_thumbnail">Thumbnail</th>
-          <th class="thead_name">Name</th>
-          <th class="thead_quantity">Quantity</th>
-          <th class="thead_price">Price</th>
+          <th class="th__thumbnail">Image</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><img src="" alt="" /></td>
-          <td><span>Product A</span></td>
-          <td><input type="number" name="" id="" /></td>
-          <td><span>0</span>€</td>
+          <td class="cell__thumbnail">
+            <img class="data__thumbnail" src="./img/productA.jpg" alt="thumbnail de producto A" />
+          </td>
+          <td><span class="data__name">Product A</span></td>
+          <td class="cell__quantity">
+            <span class="data__quantity">19</span>
+            <div class="data_quantity_buttons-container">
+
+              <button class="data__quantity-btn data__quantity-btn--add">+</button>
+              <button class="data__quantity-btn data__quantity-btn--rm">-</button>
+            </div>
+          </td>
+          <td><span class="data__price">29.45</span> €</td>
         </tr>
         <tr>
-          <td><img src="" alt="" /></td>
-          <td><span>Product B</span></td>
-          <td><input type="number" name="" id="" /></td>
-          <td><span>0</span>€</td>
+          <td class="cell__thumbnail">
+            <img class="data__thumbnail" src="./img/productB.jpg" alt="product B thumbnail" />
+          </td>
+          <td><span class="data__name">Product B</span></td>
+          <td class="cell__quantity">
+            <span class="data__quantity">3</span>
+            <div class="data_quantity_buttons-container">
+
+              <button class="data__quantity-btn data__quantity-btn--add">+</button>
+              <button class="data__quantity-btn data__quantity-btn--rm">-</button>
+            </div>
+          </td>
+          <td><span class="data__price">344.99</span> €</td>
         </tr>
       </tbody>
     </table>
