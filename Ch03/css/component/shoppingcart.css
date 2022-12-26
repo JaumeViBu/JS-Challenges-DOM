@@ -1,0 +1,9 @@
+
+table{
+  display: grid;
+  grid-template-areas: 'thumbnail name quantity price';
+}
+
+.thead_thumbnail{
+grid-area: 'thumbnail';
+}
