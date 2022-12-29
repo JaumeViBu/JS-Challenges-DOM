@@ -1,0 +1,56 @@
+.clock-container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.clock-container input{
+  width: 15%;
+}
+
+.clockRow{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.clockRow>input{
+  text-align: right;
+}
+
+.clockRow>label{
+  width: 15%;
+  text-align: center;
+}
+
+.clockRow__buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.clock-container__btn{
+  border: none;
+  border-radius: 10px;
+  width: 60px;
+  padding: 0.2rem 0rem;
+  border-bottom: 1px solid black;
+}
+.clock-container__btn--start{
+  background-color: #5bbf7c;
+}
+.clock-container__btn--pause{
+  background-color: #bf945b;
+}
+.clock-container__btn--clear{
+  background-color: #b15454;
+}
+
+.clock-container__btn:active{
+  border-bottom: none ;
+  border-top: 1px solid white;
+}

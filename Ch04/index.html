@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch04</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html">Exercise List</a>
+    <h1>Ch04</h1>
+  </nav>
+  <main>
+    <div class="clock-container">
+      <div class="clockRow">
+        <label for="hours">Hours</label>
+        <label for="minutes">Minutes</label>
+        <label for="seconds">Seconds</label>
+      </div>
+      <div class="clockRow">
+        <input type="number" name="hours" id="hours" min="0" max="23">
+        <input type="number" name="minutes" id="minutes" min="0" max="59">
+        <input type="number" name="seconds" id="seconds" min="0" max="59">
+      </div>
+      <div class="clockRow__buttons">
+        <button class="clock-container__btn clock-container__btn--start">Start</button>
+        <button class="clock-container__btn clock-container__btn--pause">Pause</button>
+        <button class="clock-container__btn clock-container__btn--clear">Clear</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>Created by Jaume Vidal</span>
+  </footer>
+</body>
+
+</html>
