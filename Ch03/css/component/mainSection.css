@@ -1,0 +1,8 @@
+main{
+  flex-grow: 1;
+  background-color: var(--primaryBgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}

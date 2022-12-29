@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch03</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html">Exercise List</a>
+    <h1>Ch03</h1>
+  </nav>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th class="th__thumbnail">Image</th>
+          <th>Name</th>
+          <th>#</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell__thumbnail">
+            <img class="data__thumbnail" src="./img/productA.jpg" alt="thumbnail de producto A" />
+          </td>
+          <td><span class="data__name">Product A</span></td>
+          <td class="cell__quantity">
+            <div class="cell__quantity__container">
+
+              <span class="data__quantity">19</span>
+              <div class="data__quantity__buttons-container">
+
+                <button class="data__quantity-btn data__quantity-btn--add">+</button>
+                <button class="data__quantity-btn data__quantity-btn--rm">-</button>
+              </div>
+            </div>
+          </td>
+          <td><span class="data__price">29.45</span> €</td>
+        </tr>
+        <tr>
+          <td class="cell__thumbnail">
+            <img class="data__thumbnail" src="./img/productB.jpg" alt="product B thumbnail" />
+          </td>
+          <td><span class="data__name">Product B</span></td>
+          <td class="cell__quantity">
+            <div class="cell__quantity__container">
+
+              <span class="data__quantity">3</span>
+              <div class="data__quantity__buttons-container">
+
+                <button class="data__quantity-btn data__quantity-btn--add">+</button>
+                <button class="data__quantity-btn data__quantity-btn--rm">-</button>
+              </div>
+            </div>
+
+          </td>
+          <td><span class="data__price">344.99</span> €</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td><span id="total">100</span> €</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+  <footer>
+    <span>Created by Jaume Vidal</span>
+  </footer>
+</body>
+
+</html>

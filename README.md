@@ -10,11 +10,11 @@ Use a decent static template in order to practice CSS and keep in mind screen si
 
 -[x] Ch01 - Having two squares in the document, we want that after clicking one, the other begins to slowly transforming into a circle and changes color.  
 -[x] Ch02 - Create a responsive menu in which, in the mobile version, the link list appears from the right side of the page after clicking in a hamburger menu.  
--[ ] Ch03 - Create a shopping cart page with some products. (use an array of 'product' objects structure)  
-    -[ ] Every product must have a counter to add or take away more quantity.  
-    -[ ] Every product must have a price.  
-    -[ ] At the end must appear a sum with the total cost of all the items in the cart.  
-    -[ ] Both the quantity counters and the total must be dynamics.  
+-[x] Ch03 - Create a shopping cart page with some products. (use an array of 'product' objects structure)  
+  -[x] Every product must have a counter to add or take away more quantity.  
+  -[x] Every product must have a price.  
+  -[x] At the end must appear a sum with the total cost of all the items in the cart.  
+  -[x] Both the quantity counters and the total must be dynamics.  
 -[ ] Ch04 - Create, in whatever way you like, a countdown clock with alarm.  
 -[ ] Ch05 - Starting with an array of 'movie' objects (each with title<string> and img<string>) render everyone of them in the DOM as Cards (create responsive cards)  
 -[ ] Ch06 - Create a calculator using HTML, CSS and JS.  
