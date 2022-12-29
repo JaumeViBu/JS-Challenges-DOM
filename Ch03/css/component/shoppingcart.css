@@ -23,22 +23,20 @@ tr>td{
   vertical-align: middle;
 }
 
+.cell__quantity__container{
 
-.data__name{
-  
-}
-.cell__quantity{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .data__quantity{
   width: 50%;
 }
-.data_quantity_buttons-container{
+.data__quantity__buttons-container{
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .data__quantity-btn{
@@ -48,16 +46,29 @@ align-items: center;
   border-radius: 5px;
   min-width: 20px;
   min-height: 20px;
+  cursor: pointer;
 }
 
 .data__quantity-btn--add{
   background-color: #349b34;
   
 }
-.data__quantity-btn--add{
+.data__quantity-btn--rm{
   background-color: #bf4545;
 }
 
-.data__price{
+tfoot{
+  border-top: 1px solid black;
+}
 
+
+@media (min-width:480px){
+
+  .data__quantity__buttons-container{
+    flex-direction: row;
+  }
+
+  .cell__quantity__container{
+    gap: 0px;;
+  }
 }
