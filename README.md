@@ -15,7 +15,7 @@ Use a decent static template in order to practice CSS and keep in mind screen si
   -[x] Every product must have a price.  
   -[x] At the end must appear a sum with the total cost of all the items in the cart.  
   -[x] Both the quantity counters and the total must be dynamics.  
--[ ] Ch04 - Create, in whatever way you like, a countdown clock with alarm.  
+-[x] Ch04 - Create, in whatever way you like, a countdown clock with alarm.  
 -[ ] Ch05 - Starting with an array of 'movie' objects (each with title<string> and img<string>) render everyone of them in the DOM as Cards (create responsive cards)  
 -[ ] Ch06 - Create a calculator using HTML, CSS and JS.  
 -[ ] Ch07 - Create a form that shows if the fields are required or not and if the data given is correct, dynamically.  
