@@ -17,6 +17,7 @@ main{
 .movie-container__movie-card{
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .movie-container__movie-card__poster{
@@ -27,7 +28,13 @@ main{
 .movie-container__movie-card__title{
   padding: 1rem;
   text-align: center;
+  background-color: var(--secondaryBgColor);
+  color: var(--secondaryTextColor);
+  border-radius: 10px;
+  height: 4rem;
 }
+
+
 
 @media (min-width: 650px){
   #movie-container{

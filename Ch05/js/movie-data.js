@@ -1,35 +1,35 @@
 export const movies = [
   {
     title: 'Avatar: The way of water',
-    image: '../media/movie-posters/avatar-way-of-water.jpg',
+    image: './media/avatar-way-of-water.jpg',
   },
   {
     title: 'Detective Knight Rogue',
-    image: '../media/movie-posters/detective-knight-rogue.jpg',
+    image: './media/detective-knight-rogue.jpg',
   },
   {
     title: 'Matilda: The musical',
-    image: '../media/movie-posters/matilda-the-musical.jpg',
+    image: './media/matilda-the-musical.jpg',
   },
   {
     title: 'Prey for the devil',
-    image: '../media/movie-posters/prey-for-the-devil.jpg',
+    image: './media/prey-for-the-devil.jpg',
   },
   {
     title: 'Puss in boots: The last wish',
-    image: '../media/movie-posters/puss-in-boots-the-last-wish',
+    image: './media/puss-in-boots-the-last-wish.jpg',
   },
   {
     title: 'Strange world',
-    image: '../media/movie-posters/strange-world.jpg',
+    image: './media/strange-world.jpg',
   },
   {
     title: 'The woman king',
-    image: '../media/movie-posters/the-woman-king.jpg',
+    image: './media/the-woman-king.jpg',
   },
   {
     title: 'Violent night',
-    image: '../media/movie-posters/violent-night.jpg',
+    image: './media/violent-night.jpg',
   },
 ];
 
@@ -39,7 +39,24 @@ export const movies = [
  * @export
  * @param {[movie]} list
  */
-export function renderMovies(list) {
+export function renderMovies(movieList) {
 
+  const movieContainer = document.querySelector('#movie-container');
 
+  for (const movie of movieList) {
+
+    const card = document.createElement('div');
+    card.classList.add('movie-container__movie-card');
+    const poster = document.createElement('img');
+    poster.classList.add('movie-container__movie-card__poster');
+    poster.src = movie.image;
+    poster.alt = 'Poster of the movie ' + movie.title;
+    const title = document.createElement('h2');
+    title.classList.add('movie-container__movie-card__title');
+    title.innerText = movie.title;
+    card.appendChild(poster);
+    card.appendChild(title);
+
+    movieContainer.appendChild(card);
+  }
 }
