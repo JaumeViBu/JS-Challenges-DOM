@@ -1,0 +1,30 @@
+main{
+  flex-grow: 1;
+  background-color: var(--primaryBgColor);
+}
+
+.target{
+  width: 200px;
+}
+
+#movie-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.movie-container__movie-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container__movie-card__poster{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-container__movie-card__title{
+  padding: 1rem;
+  text-align: center;
+}
