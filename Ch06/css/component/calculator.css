@@ -1,0 +1,123 @@
+.history-container{
+  height: 250px;
+  background-color: var(--attentionBgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.calc-container{
+  background-color: var(--attentionBgColor);
+  display: grid;
+  grid-template-areas: 
+  "display display display display"
+  "reset pow sqrt divide"
+  "num7 num8 num9 mult"
+  "num4 num5 num6 add"
+  "num1 num2 num3 sub"
+  "sign num0 point equal";
+  padding: 0.5rem;
+  height: 100%;
+  gap: 0.3rem;
+  
+}
+
+#display{
+  grid-area: display;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.supIndex{
+  vertical-align: super;
+  font-size: 0.6rem;
+}
+
+.reset-btn{
+  grid-area: reset;
+}
+.pow-btn{
+  grid-area: pow;
+}
+.sqrt-btn{
+  grid-area: sqrt;
+}
+.div-btn{
+  grid-area: divide;
+}
+.num7-btn{
+  grid-area: num7;
+}
+.num8-btn{
+  grid-area: num8;
+}
+.num9-btn{
+  grid-area: num9;
+}
+.mult-btn{
+  grid-area: mult;
+}
+.num4-btn{
+  grid-area: num4;
+}
+.num5-btn{
+  grid-area: num5;
+}
+.num6-btn{
+  grid-area: num6;
+}
+.add-btn{
+  grid-area: add;
+}
+.num1-btn{
+  grid-area: num1;
+}
+.num2-btn{
+  grid-area: num2;
+}
+.num3-btn{
+  grid-area: num3;
+}
+.sub-btn{
+  grid-area: sub;
+}
+.sign-btn{
+  grid-area: sign;
+}
+.num0-btn{
+  grid-area: num0;
+}
+.point-btn{
+  grid-area: point;
+}
+.equal-btn{
+  grid-area: equal;
+}
+
+@media (min-width:350px){
+  main{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .history-container{
+    width: 50vw;
+    height: 50vh;
+    flex-direction: column-reverse;
+    padding: 0.5rem;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .calc-container{
+    width: 50vw;
+    height: 50vh;
+  }
+}

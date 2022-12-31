@@ -1,0 +1,13 @@
+footer{
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  background-color: var(--secondaryBgColor);
+  font-family: var(--font);
+}
+
+footer, footer>span{
+  color: var(--secondaryTextColor);
+}

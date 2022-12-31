@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch06</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html">Exercise List</a>
+    <h1>Ch06</h1>
+  </nav>
+  <main>
+    <div class="calc-container">
+      <input type="text" name="display" id="display">
+      <button class="calc-btn reset-btn" onclick="reset()">C</button>
+      <button class="calc-btn pow-btn" onclick="square()">x<span class="supIndex">2</span></button>
+      <button class="calc-btn sqrt-btn" onclick="squareRoot()">√x</button>
+      <button class="calc-btn div-btn" onclick="inputOp('div');">÷</button>
+      <button class="calc-btn num7-btn" onclick="input(7)">7</button>
+      <button class="calc-btn num8-btn" onclick="input(8)">8</button>
+      <button class="calc-btn num9-btn" onclick="input(9)">9</button>
+      <button class="calc-btn mult-btn" onclick="inputOp('mult');">*</button>
+      <button class="calc-btn num4-btn" onclick="input(4)">4</button>
+      <button class="calc-btn num5-btn" onclick="input(5)">5</button>
+      <button class="calc-btn num6-btn" onclick="input(6)">6</button>
+      <button class="calc-btn add-btn" onclick="inputOp('add');">+</button>
+      <button class="calc-btn num1-btn" onclick="input(1)">1</button>
+      <button class="calc-btn num2-btn" onclick="input(2)">2</button>
+      <button class="calc-btn num3-btn" onclick="input(3)">3</button>
+      <button class="calc-btn sub-btn" onclick="inputOp('sub');">-</button>
+      <button class="calc-btn sign-btn" onclick="sign()">±</button>
+      <button class="calc-btn num0-btn" onclick="input(0)">0</button>
+      <button class="calc-btn point-btn" onclick="point()">·</button>
+      <button class="calc-btn equal-btn" onclick="equal()"> = </button>
+
+    </div>
+    <div class="history-container">
+
+    </div>
+  </main>
+  <footer>
+    <span>Created by Jaume Vidal</span>
+  </footer>
+</body>
+
+</html>
