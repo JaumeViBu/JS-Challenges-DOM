@@ -99,7 +99,7 @@
   grid-area: equal;
 }
 
-@media (min-width:350px){
+@media (min-width:700px){
   main{
     flex-direction: row;
     justify-content: flex-start;
