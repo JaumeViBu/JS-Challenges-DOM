@@ -1,6 +1,6 @@
 .history-container{
   height: 250px;
-  background-color: #666;
+  background-color: var(--attentionBgColor);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .calc-container{
-  background-color: #666;
+  background-color: var(--attentionBgColor);
   display: grid;
   grid-template-areas: 
   "display display display display"
@@ -97,4 +97,27 @@
 }
 .equal-btn{
   grid-area: equal;
+}
+
+@media (min-width:350px){
+  main{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .history-container{
+    width: 50vw;
+    height: 50vh;
+    flex-direction: column-reverse;
+    padding: 0.5rem;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .calc-container{
+    width: 50vw;
+    height: 50vh;
+  }
 }
