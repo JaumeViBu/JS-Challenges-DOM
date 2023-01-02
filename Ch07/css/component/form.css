@@ -1,0 +1,113 @@
+form {
+  font-size: 1.3rem;
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+input {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  margin: 5px 0;
+  font-size: 1.3rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: var(--secondaryTextColor);
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+fieldset::after {
+  padding-left: 0.5rem;
+  width: 100%;
+  color: #fd5757;
+  white-space: pre-wrap;
+}
+
+.form__input--danger {
+  background-color: #f88080;
+}
+
+.form__field-username {
+}
+
+.form__field-username::after {
+  content: attr(danger-msg);
+}
+
+.form__field-password {
+}
+
+.form__field-password::after {
+  content: attr(danger-msg);
+}
+
+.form__field-msg {
+}
+
+.form__field-msg::after {
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+button:active {
+  border-top: 1px solid black;
+}
+
+.form__btn-submit {
+  color: var(--secondaryTextColor);
+  background-color: #5581fb;
+}
+
+@media (min-width: 480px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  fieldSet {
+    max-width: 40vw;
+  }
+  .form__btn-submit {
+    width: 100%;
+  }
+  .form__field-msg {
+    flex-basis: auto;
+    width: 100%;
+  }
+  button {
+    max-width: 50vw;
+  }
+
+  .form__field-submit {
+    padding-top: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  fieldSet {
+    max-width: 30vw;
+  }
+}
