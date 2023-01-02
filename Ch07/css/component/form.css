@@ -45,14 +45,14 @@ fieldset::after {
 }
 
 .form__field-username::after {
-  content: "El nom d'usuari és obligatori.\AHa de tenir al menys 8 caràcters.\ANomés pot contenir caràcters alfanumèrics.";
+  content: attr(danger-msg);
 }
 
 .form__field-password {
 }
 
 .form__field-password::after {
-  content: "La contrasenya és obligatòria.\AHa de tenir al menys 8 caràcters.";
+  content: attr(danger-msg);
 }
 
 .form__field-msg {
