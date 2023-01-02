@@ -18,5 +18,5 @@ Use a decent static template in order to practice CSS and keep in mind screen si
 - [x] Ch04 - Create, in whatever way you like, a countdown clock with alarm.  
 - [x] Ch05 - Starting with an array of 'movie' objects (each with title<string> and img<string>) render everyone of them in the DOM as Cards (create responsive cards)  
 - [x] Ch06 - Create a calculator using HTML, CSS and JS.  
-- [ ] Ch07 - Create a form that shows if the fields are required or not and if the data given is correct, dynamically.  
+- [x] Ch07 - Create a form that shows if the fields are required or not and if the data given is correct, dynamically.  
 - [ ] Ch08 - Starting with a list rendered in the DOM, create a dynamic filter when writing in a input.  
